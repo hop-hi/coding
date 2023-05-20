@@ -1,4 +1,4 @@
-create a new repository on the command line
+Create a new repository on the command line
 -------------
 * git init
 * git add README.md
@@ -7,7 +7,7 @@ create a new repository on the command line
 * git remote add origin https://github.com/hop-hi/coding.git
 * git push -u origin main
 
-push an existing repository from the command line
+Push an existing repository from the command line
 -------------
 * git remote add origin https://github.com/hop-hi/coding.git
 * git branch -M main
