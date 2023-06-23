@@ -13,5 +13,5 @@ Push an existing repository from the command line
 * git branch -M main
 * git push -u origin main
 
-![서비스 구성도](./서비스 구성도.png)
+![서비스 구성도](./서비스 구성도.PNG)
 
