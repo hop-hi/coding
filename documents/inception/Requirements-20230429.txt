@@ -35,3 +35,8 @@
 3. 3개의 URL에 동시에 요청 하는 Client를 개발 
     1) Java 개발
     
+    
+* OAuth 2.0 설명 (https://blog.naver.com/mds_datasecurity/222182943542)
+
+* 사운드클라우드 API 사용 (https://developers.soundcloud.com/docs/api/guide#authentication)
+    
