@@ -1,0 +1,103 @@
+<mxfile host="Electron" modified="2023-06-23T07:10:37.926Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="HyZCMFLZ7aP-_bEvQgc-" version="21.1.2" type="device">
+  <diagram name="페이지-1" id="lJNPSnAFYCphQRBjr0C_">
+    <mxGraphModel dx="2245" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WfAVJ347IU-LoTLja4PH-21" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeWidth=3;strokeColor=#f20202;" vertex="1" parent="1">
+          <mxGeometry x="500" y="180" width="280" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-1" target="WfAVJ347IU-LoTLja4PH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-1" target="WfAVJ347IU-LoTLja4PH-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-1" target="WfAVJ347IU-LoTLja4PH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-1" target="WfAVJ347IU-LoTLja4PH-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-1" target="WfAVJ347IU-LoTLja4PH-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-1" value="main_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-2" target="WfAVJ347IU-LoTLja4PH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-2" value="search_movie_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="550" y="220" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-3" target="WfAVJ347IU-LoTLja4PH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-3" value="search_music_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="550" y="320" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-4" target="WfAVJ347IU-LoTLja4PH-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-4" value="profiling_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="550" y="430" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-5" target="WfAVJ347IU-LoTLja4PH-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-5" value="moviematcher_rule_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="550" y="530" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-6" target="WfAVJ347IU-LoTLja4PH-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-6" value="save_feature_api" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="550" y="640" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-7" value="메인 API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="460" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-8" value="영화 정보 검색&amp;nbsp; API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="280" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-9" value="음악 정보 검색 API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-10" value="데이터 분석/추출 API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="554" y="490" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-11" value="룰 엔진 API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="590" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-12" value="결과 및 분석 정보 저장 API 서버" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="700" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WfAVJ347IU-LoTLja4PH-18" target="WfAVJ347IU-LoTLja4PH-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-18" value="영화기반&lt;br style=&quot;font-size: 14px;&quot;&gt;음악 플레이리스트 추천&amp;nbsp;&lt;br style=&quot;font-size: 14px;&quot;&gt;APP&lt;br style=&quot;font-size: 14px;&quot;&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="370" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-20" value="플레이 리스트 추천 앱" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="470" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-22" value="현재 개발 진행 중....." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="510" y="150" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-23" value="검색 결과&lt;br&gt;저장" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="870" y="242.5" width="110" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-26" value="변수 정보&lt;br&gt;저장" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="870" y="402.5" width="110" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-28" value="분석 결과&lt;br&gt;저장" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="870" y="612.5" width="110" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="WfAVJ347IU-LoTLja4PH-30" value="룰 실행 결과&lt;br&gt;저장" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="870" y="530" width="110" height="72.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
