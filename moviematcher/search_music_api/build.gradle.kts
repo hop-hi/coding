@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	// https://mvnrepository.com/artifact/com.google.code.gson/gson
 	implementation("com.google.code.gson:gson:2.10.1")
 

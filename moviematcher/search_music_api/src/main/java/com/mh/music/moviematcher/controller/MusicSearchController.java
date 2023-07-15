@@ -3,7 +3,13 @@ package com.mh.music.moviematcher.controller;
 import com.google.gson.Gson;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.util.DefaultUriBuilderFactory;
+import reactor.core.publisher.Mono;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @RestController
@@ -28,10 +34,62 @@ public class MusicSearchController {
         //  List<String> play_list = MusicMAtcherEngine.fire(".....")
         //  역할 의 분리 -- 수집(.. 영화정보...) , 매칭/매핑 (음악....) , 알고리즘 연산
 
-        List<String> play_list = Arrays.asList("All of Me","When we were young");
+        // okHttp 오픈소스
+        // WebFlux : webClient....
+        String TOKEN_URL = "https://accounts.spotify.com/api/token";
+        String SEARCH_URL = "https://api.spotify.com/v1/search";
+        DefaultUriBuilderFactory factory = new DefaultUriBuilderFactory(TOKEN_URL);
+        factory.setEncodingMode(DefaultUriBuilderFactory.EncodingMode.VALUES_ONLY);
+        WebClient webClient = WebClient.builder()
+                            .uriBuilderFactory(factory)
+                            .baseUrl(TOKEN_URL)
+                            .build();
+        String response = webClient.post()
+                .uri(uriBuilder -> uriBuilder
+                        .queryParam("grant_type","client_credentials")
+                        .queryParam("client_id","67d92ea5cebe407a9ceb0341a4aae137")
+                        .queryParam("client_secret","115739e5caee477fa3c8c09a20c6e5e4")
+                        .build())
+                .header("Content-Type","application/x-www-form-urlencoded")
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+        Gson gson = new Gson();
+        Map<String,Object> json_map = gson.fromJson(response,Map.class);
+        String access_token = json_map.get("access_token")+"";
+
+        factory = new DefaultUriBuilderFactory(SEARCH_URL);
+        factory.setEncodingMode(DefaultUriBuilderFactory.EncodingMode.VALUES_ONLY);
+        webClient = WebClient.builder()
+                .uriBuilderFactory(factory)
+                .baseUrl(SEARCH_URL)
+                .build();
+
+        // https://developer.spotify.com/documentation/web-api/reference/search
+        
+        response = webClient.get()
+                .uri(uriBuilder -> {
+                    try {
+                        return uriBuilder
+                                .queryParam("q", URLEncoder.encode("remaster: track:ADoxy% artist:AMiles% Davis", StandardCharsets.UTF_8.toString()))
+                                .queryParam("type", "album")
+                                .queryParam("market", "ES")
+                                .queryParam("limit", "10")
+                                .queryParam("offset", "5")
+                                .build();
+                    } catch (UnsupportedEncodingException e) {
+                        throw new RuntimeException(e);
+                    }
+                })
+                .header("Authorization", "Bearer " + access_token)
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
+
+        List<Object> play_list = Collections.singletonList(response);
         Map<String,Object> search_result = new HashMap<>();
         search_result.put("play_list",play_list);
-        Gson gson = new Gson();
+
         return gson.toJson(search_result);
     }
 }
