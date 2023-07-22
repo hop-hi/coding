@@ -7,6 +7,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.DefaultUriBuilderFactory;
 import reactor.core.publisher.Mono;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -21,8 +22,9 @@ public class MusicSearchController {
     }
 
     @GetMapping("/search")
-    public String search(){
+    public String search(HttpServletRequest request){
 
+        String movie_year = request.getParameter("movie_year");
         // 3개의 음악 포털 사이트에서 검색을 통해 Music Play List를 가져 온다.
         // + 알고리즘.(아직 추가 안함.)
         //  - Rule (규칙)
@@ -66,14 +68,14 @@ public class MusicSearchController {
                 .build();
 
         // https://developer.spotify.com/documentation/web-api/reference/search
-        
+        // movie_year =  영화 년도
         response = webClient.get()
                 .uri(uriBuilder -> {
                     try {
                         return uriBuilder
-                                .queryParam("q", URLEncoder.encode("remaster: track:ADoxy% artist:AMiles% Davis", StandardCharsets.UTF_8.toString()))
-                                .queryParam("type", "album")
-                                .queryParam("market", "ES")
+                                .queryParam("q", URLEncoder.encode("year:2021", StandardCharsets.UTF_8.toString()))
+                                .queryParam("type", "album")  //  결과(Response) 받고 싶은 내용
+                                .queryParam("market", "US")
                                 .queryParam("limit", "10")
                                 .queryParam("offset", "5")
                                 .build();
