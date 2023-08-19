@@ -1,0 +1,7 @@
+docker ps 
+- 컨테이너 실행 프로세스 확인
+
+root 권한.
+sudo ./docker-run.sh
+sudo docker ps
+

@@ -1,0 +1,5 @@
+1. Opensource  동영상
+ - https://www.youtube.com/watch?v=9b5P4YiyqOY
+
+2. Java 기반의 드디어 백엔드 코딩
+ - 사전에 Postgres Table 생성...먼저...
