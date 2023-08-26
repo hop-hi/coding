@@ -1,5 +1,12 @@
 spring:
   application:
     name: MusicMatcher
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
 server:
   port: 9090

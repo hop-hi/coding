@@ -1,0 +1,37 @@
+Spotify API : https://developer.spotify.com/documentation/web-api/reference/search
+
+client Id :  67d92ea5cebe407a9ceb0341a4aae137
+secret Key : 115739e5caee477fa3c8c09a20c6e5e4
+
+1. 토큰 요청 방법 (https://developer.spotify.com/documentation/web-api/tutorials/getting-started)
+- curl -X POST "https://accounts.spotify.com/api/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=67d92ea5cebe407a9ceb0341a4aae137&client_secret=115739e5caee477fa3c8c09a20c6e5e4"
+2. 검색 방법 (https://developer.spotify.com/documentation/web-api/reference/search)
+- curl -X GET "https://api.spotify.com/v1/search?q=remaster%2520track%3ADoxy%2520artist%3AMiles%2520Davis&type=album&market=ES&limit=10&offset=5" -H "Authorization: Bearer  {=token}"
+
+3. spotify-web-search : Request
+
+
+You can narrow down your search using field filters. The available filters are album, artist, track, year, upc, tag:hipster, tag:new, isrc, and genre. Each field filter only applies to certain result types.
+
+The artist and year filters can be used while searching albums, artists and tracks. You can filter on a single year or a range (e.g. 1955-1960).
+The album filter can be used while searching albums and tracks.
+The genre filter can be used while searching artists and tracks.
+The isrc and track filters can be used while searching tracks.
+The upc, tag:new and tag:hipster filters can only be used while searching albums. The tag:new filter will return albums released in the past two weeks and tag:hipster can be used to return only albums with the lowest 10% popularity.
+
+Example value: "remaster%20track:Doxy%20artist:Miles%20Davis"
+
+
+ - url : https://api.spotify.com/v1/search
+ - query : q=검색어 + 공백(%20) + filter(album,artist,track,year,upc,tag:hipster,tag:new,isrc,genre) + ':' + 검색어 + 공백(%20) + type:("album", "artist", "playlist", "track", "show", "episode", "audiobook")
+
+
+4. spotify-web-search : Response
+ * 각 조회 결과별로 Item(데이터항목) 을 분석해서 정의 필요
+ - "album"
+ - "artist"
+ - "playlist"
+ - "track"
+ - "show"
+ - "episode"
+ - "audiobook"

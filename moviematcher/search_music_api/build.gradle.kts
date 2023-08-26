@@ -15,12 +15,21 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jdbc
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc:2.7.15")
+
 	// https://mvnrepository.com/artifact/com.google.code.gson/gson
 	implementation("com.google.code.gson:gson:2.10.1")
 
+	// postgres
+	implementation("org.postgresql:postgresql:42.6.0")
+
+	// mybatis
+	implementation("org.mybatis:mybatis:3.5.13")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
-
-tasks.withType<Test> {
-	useJUnitPlatform()
-}
+//
+//tasks.withType<Test> {
+//	useJUnitPlatform()
+//}

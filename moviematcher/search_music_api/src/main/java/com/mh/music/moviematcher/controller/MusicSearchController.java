@@ -1,6 +1,9 @@
 package com.mh.music.moviematcher.controller;
 
 import com.google.gson.Gson;
+import com.mh.music.moviematcher.service.MusicSearchService;
+import com.mh.music.moviematcher.vo.MusicSearchVO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -15,6 +18,9 @@ import java.util.*;
 
 @RestController
 public class MusicSearchController {
+
+    @Autowired
+    private MusicSearchService musicSearchService;
 
     @GetMapping("/welcome")
     public String hi(){
@@ -91,6 +97,11 @@ public class MusicSearchController {
         List<Object> play_list = Collections.singletonList(response);
         Map<String,Object> search_result = new HashMap<>();
         search_result.put("play_list",play_list);
+
+        MusicSearchVO vo = new MusicSearchVO();
+        vo.setMusicName("TEST");
+        vo.setMusicURL("TEST");
+        musicSearchService.save(vo);
 
         return gson.toJson(search_result);
     }
