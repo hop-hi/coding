@@ -1,0 +1,43 @@
+1. ToDo
+  - 음악 플레이리스트 추천 알고리즘 요구사항 정의
+  - 여러가지 추천 알고리즘 방식 중에서 적합한 방식을 선택함.
+  - 선택한 알고리즘을 활용하여, 구현중인 추천 방식에 적합하도록 수정/확장 하여 개발 함.
+
+2. How To choice
+  (1) 컨텐츠 베이스 방식
+  (2) 협업 필터링 방식
+  (3) 숨은 속성 발견 방식 (ML 사용)
+
+3. How To apply
+  (1) 추전 알고리즘이 잘 작동하도록 하기 위한 최고의 효과는 어디에서 발생하는가?
+    - 구현하고자 하는 의도에 따라 다를 수 있음
+    - 의도하는 방향이 스스로 효과를 만들어 가는 설계(Active) vs 관리자가 직접 규칙을 만들어 가는 설계 (Passive)
+
+  (2) Active
+    - 스스로 판단하기 위한 데이터와 규칙을 찾아 가는 방식
+    - 외부의 개입이 없으므로, 데이터의 수집과 규칙의 발견이 "시스템"적으로 운영되어야 함.
+    - 운영중인 데이터와 규칙을 변경해 가면서(시뮬레이션) 효과를 재 분석하도록 운영되어야 함.
+      (Self Recommendation)
+    - 장점 : 점점 좋은 추천 성능 가지게 됨.
+    - 단점 : 초기에 필요한 데이터와 규칙의 추천 성능이 나쁨.
+
+  (3) Passive
+    - 추천에 필요한 데이터를 미리 입력하거나, 계속 입력해 주는 방식
+    - 입력될 데이터의 항목들을 미리 판단하고, 항목들을 기반으로 추천 규칙을 직접 입력해 주는 방식
+    - 입력된 데이터중에서 사용자 혹은 추천상품별로 크로스 체크하여, 추천해 주는 방식
+    - 장점 : 초기에 미리 규칙이 생성되어 있음 / 초기 추천 기능이 작동하게 됨.
+    - 단점 : 관리자의 개입을 통해 데이터와 규칙이 갱신되어야 함.
+      
+4. Requirements
+  - 넷플릭스 : https://conductor.netflix.com/devguide/concepts/index.html
+    /app/searches : 최다 검색 조회 (GET)
+    /app/categories/main : 메인 카테고리 조회 (GET)
+    /app/categories/series : 시리즈 카테고리 조회 (GET)
+    /app/categories/movie : 영화 카테고리 조회 (GET)
+    /app/evaluations/:profileIdx : 콘텐츠 평가 및 취소 (POST)
+    /app/evaluations/:profileIdx?contentIdx : 콘텐츠 평가 조회 (GET)
+    /app/hot/:profileIdx : 모두의 인기 콘텐츠 조회 (GET)
+    /app/topSeries/:profileIdx : Top 10 시리즈 조회 (GET)
+    /app/topMovies/:profileIdx : Top 10 영화 조회 (GET)
+    /app/movies/:profileIdx : 영화 상세 페이지 조회 (GET)
+    /app/series/:profileIdx : 시리즈 상세 페이지 조회 (GET)

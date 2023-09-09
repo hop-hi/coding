@@ -1,0 +1,42 @@
+1. ToDo
+  - 영화정보를 바탕으로 검색한 음악 플레이리스트 결과를 저장 해야 함.
+
+2. What to do 
+  (1) DataBase 설계
+     - step 1 => 데이터 베이스 선택 및 설치 : 도커를 사용하여 Postgres 데이터 베이스 설치
+     - step 2 => 데이터 베이스 사용자 계정 생성 : create user / grant 를 사용하여 개발용 계정/비번 생성
+  (2) Table 설계
+     - step 1 => 음악정보 플레이리스트 결과를 저장할 Table 종류 파악
+        ---------------------------------------
+        - "album"
+        - "artist"
+        - "playlist"
+        - "track"
+        - "show"
+        - "episode"
+        - "audiobook"
+        ---------------------------------------       
+      - step 2 => Table 속성들 파악
+      - step 3 => Table 들의 관계 정의
+      - step 4 => Table 들의 키 정의
+      - step 5 => Table 들에 저장할 Column  정의
+      - step 6 => Create Table
+  (3) DAO,Service,Controller 설계 / 개발
+      - 각 테이블들에 대한 Mapper 파일 생성
+      - Mapper 파일의 CRUD SQL 생성
+  (4) DAO,Service,Controller 설계 / 개발
+      - step 1 => Java 의 MyBatis를 활용한 DAO 클래스 설계 및 개발
+      - step 2 => Java 의 Spring을 활용한 Service 클래스 설계 및 개발
+      - step 3 => Java 의 Spring을 활용한 Controller 클래스 설계 및 개발
+
+3. More
+  (1) JPA 개념과 사용법 숙지
+      - JPA ??
+      - JPA 사용법
+      - JPA 샘플
+      - SpringBoot에서 JPA 사용법 숙지
+  (2) DAO,Service,Controller 설계 / 개발
+      - 각 테이블들에 대한 JPA 객채 생성
+  (3) Service,Controller 설계 / 개발
+      - step 1 => Java 의 Spring을 활용한 Service 클래스 설계 및 개발
+      - step 2 => Java 의 Spring을 활용한 Controller 클래스 설계 및 개발      

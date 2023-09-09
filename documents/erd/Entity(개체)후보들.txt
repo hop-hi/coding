@@ -1,0 +1,55 @@
+Entity(개체)
+
+
+tracks
+  - album
+  - artists
+
+albums
+
+artists
+  - images
+    + url                : 혼자서 독립적인 개체인가? os 다른 개체의 종속된 속성인가?
+    + height
+    + width
+  - name
+  - popularity
+  - type
+  - url
+
+playlists
+  - collaborative (타인이 수정여부)
+  - description
+  - images
+    + url
+    + height
+    + width
+  - name
+  - owner
+    + followers(아티스트 팔로워)
+      + total
+    - type
+    - display_name
+  - public (오픈 여부)
+  - snapshot_id
+  - tracks
+
+shows
+  - available_markets
+  - copy_rights
+    + text
+    + type
+  - description
+  - html_description
+  - explicit
+  - id(Spotify id)
+  - images
+    + url
+    + height
+    + width
+  - ....
+
+episodes
+  - 
+
+audiobooks
