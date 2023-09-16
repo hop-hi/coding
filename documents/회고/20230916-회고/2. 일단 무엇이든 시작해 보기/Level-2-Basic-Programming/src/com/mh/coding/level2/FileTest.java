@@ -1,0 +1,28 @@
+package com.mh.coding.level2;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class FileTest {
+
+	public static void main(String[] args) {
+			File f = new File("C:/Private Work/Private Training - Junior/MH/twitter-sample.txt");
+			System.out.println(f.getAbsolutePath());
+			System.out.println(f.getName());
+			System.out.println(f.length());
+			System.out.println(f.lastModified());
+			
+			// Byte : Stream (I/O) , 문자열 : Reader/Writer
+			try {
+				FileInputStream  fis = new FileInputStream(f);
+				byte[] buf = new byte[256];
+				int read_byte = -1;
+				while((read_byte = fis.read(buf)) != -1 ) {
+					System.out.println(new String(buf,"UTF-8"));		
+				}
+				fis.close();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+	}
+}

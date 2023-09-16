@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/gradle-level1" element2="/trinity-boot-core" element3="/wayd-new-container-telegram-bot" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1652492853483"/>
+</session>

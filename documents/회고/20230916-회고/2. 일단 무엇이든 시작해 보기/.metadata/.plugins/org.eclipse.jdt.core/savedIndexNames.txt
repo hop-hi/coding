@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\stuko\workspace-level-1\.metadata\.plugins\org.eclipse.jdt.core
+106251111.index
+2768487886.index

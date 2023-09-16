@@ -1,0 +1,15 @@
+package com.mh.coding.level1;
+
+public class Woman implements People{
+
+	@Override
+	public void say() {
+		System.out.println("저는 여자 입니다");
+	}
+
+	@Override
+	public String listen(String message) {
+		return "여자는 잘 들어요 " + message;
+	}
+
+}

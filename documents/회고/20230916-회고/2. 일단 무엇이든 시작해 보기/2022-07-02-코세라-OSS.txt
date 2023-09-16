@@ -1,0 +1,31 @@
+"2022-07-02"
+
+1. 코세라 : Java 기본 클래스 설명 잘되어 있는 강의 (무료 청강)
+  - 5분 정도의 짧은 강의 약 30 ~ 40개 정도
+  - Generic / Collections / Exception Handling / Input and Output / Enums
+  - https://www.coursera.org/learn/java-class-library/home/welcome
+
+2. 코세라 : Java 객체지향 개발 설명 잘되어 있는 강의 (무료 청강)
+  - 평균 약 10분정도의 40개 정도 
+  - Class and Object / Create / Object / Namespace
+  - https://www.coursera.org/learn/object-oriented-programming-with-java/home/
+
+3. Spring (Boot) OSS
+ MVC
+  - Spring MVC
+  - Connection Pool
+  - 3 Tier (Web Application Server) --> But Microservice
+
+
+4. Opensource Architecture ( Spring / Netty )
+  - Windows or Mac?
+    : Docker 설치 (윈도우 Docker Desktop / Mac )
+  - OSS for Web
+    : Nginx / Netty / Spring / 
+  - OSS for NoSQL
+    : MongoDB / 
+  - OSS for DB
+    : MariaDB / 
+  - OSS for Queue ( Kafka )
+  - OSS for Search ( ELK )
+  - OSS for Monitoring ( Promethous )

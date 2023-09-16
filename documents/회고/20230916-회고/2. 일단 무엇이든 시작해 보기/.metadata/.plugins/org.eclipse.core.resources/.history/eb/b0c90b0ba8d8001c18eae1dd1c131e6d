@@ -1,0 +1,16 @@
+package com.mh.coding.level2;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
+public class FileWriterTest {
+	public static void main(String[] args) {
+		File f = new File("C:/Private Work/Private Training - Junior/MH/twitter-sample.txt");
+		try {
+			FileOutputStream fos = new FileOutputStream(f);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+       <bean id="Car" class="com.example.demo.spring.car.vip.impl.SonataImpl" scope="prototype">
+                <property name="engine" ref="KoreaEngine" />
+                <property name="wheel" ref="JapanWheel" />
+                <property name="chair" ref="ChineseChair" />
+        </bean>
+
+       <bean id="KoreaEngine" class="com.example.demo.spring.car.vip.impl.KoreaEngineImpl" scope="prototype">
+                <property name="core" ref="EnglandCore" />
+        </bean>
+
+        <bean id="EnglandCore" class="com.example.demo.spring.car.vip.impl.EnglandCoreImpl" scope="prototype">
+        </bean>
+
+       <bean id="JapanWheel" class="com.example.demo.spring.car.vip.impl.JapanWheelImpl" scope="prototype">
+         </bean>
+
+       <bean id="ChineseChair" class="com.example.demo.spring.car.vip.impl.ChineseChairImpl" scope="prototype">
+        </bean>
+
+
+</beans>

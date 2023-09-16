@@ -1,0 +1,15 @@
+package com.mh.coding.level4;
+
+import java.net.*;
+
+public class NIOServerTest {
+	public static void main(String[] args) {
+		try {
+			InetAddress addr = InetAddress.getByName("0.0.0.0");
+			ServerSocketChannel acceptor = ServerSocketChannel.open();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

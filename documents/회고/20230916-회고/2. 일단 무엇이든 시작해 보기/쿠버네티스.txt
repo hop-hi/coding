@@ -1,0 +1,10 @@
+https://labs.play-with-k8s.com/
+이성미 강사 실습 자료 : https://github.com/237summit/Getting-Start-Kubernetes
+https://www.youtube.com/watch?v=6n5obRKsCRQ&list=PLApuRlvrZKohaBHvXAOhUD-RxD0uQ3z0c
+
+https://labs.play-with-k8s.com/
+
+https://www.tecmint.com/deploy-nginx-on-a-kubernetes-cluster/
+
+
+

@@ -1,0 +1,12 @@
+package com.mh.coding.level1;
+
+public class ObjectAndInterface {
+	
+	public static void main(String[] args) {
+		People p = new Man();
+		p.say();
+		p = (Woman)p;
+		p.say();
+		
+	}
+}

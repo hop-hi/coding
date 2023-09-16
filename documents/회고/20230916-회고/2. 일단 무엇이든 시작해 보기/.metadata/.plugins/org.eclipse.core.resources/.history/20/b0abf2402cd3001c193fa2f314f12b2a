@@ -1,0 +1,20 @@
+package com.mh.coding.level1;
+
+public class CallByValueAndReference {
+
+	public static String receive(String data) {
+		data = data + " 받았다";
+		return data;
+	}
+	
+	public static void main(String[] args) {
+		
+		String X = "나는 ";
+		
+		String Y  = receive(X);
+		
+		System.out.println(X);
+		System.out.println(Y);
+	}
+	
+}

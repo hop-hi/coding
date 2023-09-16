@@ -1,0 +1,14 @@
+package com.mh.coding.level1;
+
+public class CallByValueAndReference {
+
+	public static String receive(String data) {
+		data = data + " ¹Þ¾Ò´Ù";
+		return data;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

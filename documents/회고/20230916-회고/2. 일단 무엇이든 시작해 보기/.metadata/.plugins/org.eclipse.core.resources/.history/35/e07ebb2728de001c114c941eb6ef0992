@@ -1,0 +1,17 @@
+package com.mh.coding.level5;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ConcurrentTest {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newFixedThreadPool(4);
+		try {
+			executor.submit(()->{
+				System.out.println("................");
+			});
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}	

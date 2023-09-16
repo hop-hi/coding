@@ -1,0 +1,17 @@
+package com.mh.coding.level3;
+
+import java.net.ServerSocket;
+
+public class NetworkTest {
+
+	public static void main(String[] args) {
+		try {
+			ServerSocket ss = new ServerSocket(9999);
+			ss.accept();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

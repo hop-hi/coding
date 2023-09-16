@@ -1,0 +1,8 @@
+package com.mh.coding.level2;
+
+public class FileTest {
+
+	public static void main(String[] args) {
+		File f = new File("C:/Private Work/Private Training - Junior/MH/twitter-sample.txt");
+	}
+}

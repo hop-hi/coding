@@ -1,0 +1,40 @@
+package com.mh.coding.level2;
+
+public class ThreadFileWriter {
+	public static void main(String[] args) {
+		
+		Thread th  = new Thread("Th1") {
+			@Override
+			public void run() {
+				while(true) {
+					System.out.println(this.getName() + "-" + System.currentTimeMillis());
+					try {
+						Thread.sleep(1000 * 2);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		};
+		
+		th.start();
+		
+		
+		Thread th2  = new Thread("Th2") {
+			@Override
+			public void run() {
+				while(true) {
+					System.out.println(this.getName() + "-" + System.currentTimeMillis());
+					try {
+						Thread.sleep(1000 * 2);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		};
+		
+		th2.start();
+		
+	}
+}

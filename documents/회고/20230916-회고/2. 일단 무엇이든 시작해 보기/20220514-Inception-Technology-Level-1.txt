@@ -1,0 +1,126 @@
+https://github.com/stuko/Learn-IT.git
+
+
+
+--------------------------------------
+Now...
+--------------------------------------
+1) Why ?  
+  - Solve the problem of "XXXXXX"
+
+--------------------------------------
+Question !!!
+--------------------------------------
+1) What do we  need for develop a system or service?
+
+2) How to apply all of technology to our system.
+
+--------------------------------------
+Have to Know
+--------------------------------------
+1. Architecture ( Include Platform )
+  - Concept
+  - Application Architecture
+
+2. Basic Technology (Include Development Environment / Basic Programming)
+  - Loop and Variables
+  - Object and Interface
+  - Override / Overload
+  - Call by Value or Reference
+  - Byte / String (Include BASE64, HEX)
+  - File I/O : Random Access File/Text File , Network I/O : TCP/UDP / NIO : Channel
+  - Thread / Concurrent
+  - IDE + Language (Java / Kotlin / Python / Javascript for Nodejs, React, Vue / Go lang)
+  - Build tools (Gradle / Maven)
+  - Configuration Management (Git : Github or Gitlab , Jenkins)
+  - Functional Programming ( Lambda )
+    (https://www.youtube.com/watch?v=VRpHdSFWGPs)
+ 
+3. Web Architecture ( Include SPA / Mobile )
+  - HTML/CSS/Javascript(JQuery, React, Typescript , Javascript ES6)
+    werbserver : nginx
+    https://www.w3schools.com/tags/default.asp
+    https://getbootstrap.kr/
+    Free Theme :  https://startbootstrap.com/themes
+    --> https://getbootstrap.com/docs/5.2/components/buttons/#content
+  - javascript Framework
+    : JQuery ( https://releases.jquery.com/)
+
+  - HTTP Protocol
+    (REST : 사용하는 방식)
+    - create, update, delete, read/search
+      - http://aaa.com/product/create
+      - http://aaa.com/product/delete
+      - http://aaa.com/product   : HTTP Method :GET/PUT/DELETE/POST 
+
+  - JSP/Servlet (Servlet Container)
+
+  - MVC
+  - Spring MVC
+  - 3 Tier (Web Application Server)
+
+   Amogo code : Spring Boot Tutorial
+   https://www.youtube.com/watch?v=9SGDpanrc8U
+
+  - Connection Pool
+  
+4. Opensource Architecture ( Spring / Netty ) --> 12번 도커 참조
+  - OSS for Web
+  - OSS for NoSQL
+  - OSS for DB
+  - OSS for Queue ( Kafka )
+  - OSS for Search ( ELK )
+  - OSS for Monitoring ( Promethous )
+
+5. Stand Alone Architecture
+  - Daemon 
+  - Server
+  - GUI Programming
+
+6. DB and Storage Architecture
+  - Transaction
+  - SQL
+  - Isolation Level
+  - Stored Procedure
+  - O/R Mapping
+  - Backup
+  - Roll Back
+  - DW (DataBase Warehouse)
+  - Data Mart
+  - Hadoop
+
+7. Communication Method
+  - Agile Communication Tools
+  - Jira / Bug Tracking / Issue Tracking
+
+8. Remote Call Architecture
+  - RMI
+  - REST ( HTTP / HTTPS )
+  - Serialization ( JSON )
+
+9. Security Architecture
+  - OAuth
+  - SSL
+
+10. Concurrent Architecture
+  - Java Concurrent Package
+
+11. Reliability Architecture
+  - Load Balance
+  - Fault Tolerance
+  - Multi Tier
+
+12. Modern Architecture ( Include configuration management and CI/CD)
+  - Docker
+    [따배도] 0. 드디어 찾아온 Docker 강의! 왕초보에서 도커 마스터로
+    https://www.youtube.com/watch?v=NLUugLQ8unM&list=PLApuRlvrZKogb78kKq1wRvrjg1VMwYrvi
+    Amigo Code : Docker tutorial
+    https://www.youtube.com/watch?v=p28piYY_wv8	
+
+  - K8S
+  - MSA
+  - EDA
+  - Real Time Stream
+  - Modern Coding Pattern ( Stream / Lambda / Functional Programing)
+  - React Programming
+  - Machine Learning Programming

@@ -1,0 +1,5 @@
+package com.mh.coding.level1;
+
+public interface ManKind {
+	void breath();
+}

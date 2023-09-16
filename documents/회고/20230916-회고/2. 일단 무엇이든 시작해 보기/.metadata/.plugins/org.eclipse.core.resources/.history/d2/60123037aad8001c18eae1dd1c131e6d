@@ -1,0 +1,17 @@
+package com.mh.coding.level2;
+
+public class ThreadFileWriter {
+	public static void main(String[] args) {
+		
+		Thread th  = new Thread("Th1") {
+			@Override
+			public void run() {
+				System.out.print(this.getName() + "-" + System.currentTimeMillis());
+			}
+		};
+		while(true) {
+			th.start();
+		}
+		
+	}
+}

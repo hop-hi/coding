@@ -1,0 +1,11 @@
+package com.mh.coding.level2;
+
+public class ThreadFileWriter {
+	public static void main(String[] args) {
+		Thread th  = new Thread("Th1") {
+			public void run() {
+				
+			}
+		};
+	}
+}

@@ -1,0 +1,37 @@
+1. 영화 제목 검색 
+  - 제작년도, 제목, 감독, 배우, 나라
+2. Flow
+  1) 사용자의 영화 선택
+  2) 영화 정보 API를 통해서 검색
+  3) 검색 결과를 음악 추천 API에 전달
+  4) 영화 
+     - 제작년도
+     - 제목
+     - 감독
+     - 배우
+     - 나라
+3. 음악(노래) 검색
+  
+  * 제약사항
+   - spotify는 한국에서 서비스가 안되기 때문에 VPN을 해외로 돌려 이용
+   - 애플뮤직은 한국 음악이 적음
+   - shazam은 공식 api가 없음
+   - 빌보드는 hot100 등 차트 관련 api
+
+  * API 후보 / 크롤링(웹사이트 검색.....)
+   - SpotifyApi ( https://github.com/svkaka/SpotifyAlbumSearch )
+   - Itunes API ( https://itunes.apple.com/search?key=value )
+   - ManiaDB ( http://www.maniadb.com/api/ )
+   - billclintonswag.com/
+   - www.last.fm/api
+
+
+1. 3개 정도의 음악 검색 API를 정의함.(수집)
+2. Spring Boot 서버 개발을
+    1) Spring Boot Initializer
+       - spring boot rest server depencency
+       - Spring Web.
+    2) localhost:8080/hello  --> Welcome 응답 주는 REST 서버 개발
+3. 3개의 URL에 동시에 요청 하는 Client를 개발 
+    1) Java 개발
+    
